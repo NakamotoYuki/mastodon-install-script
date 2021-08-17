@@ -31,7 +31,8 @@ sudo apt install -y \
   zlib1g-dev libncurses5-dev libffi-dev libgdbm-dev \
   redis-server redis-tools postgresql postgresql-contrib \
   libidn11-dev libicu-dev libjemalloc-dev nginx
-  
+
+NODE_OPTIONS=--max_old_space_size=4096
 ## (c.f. https://qiita.com/yakumo/items/10edeca3742689bf073e about not needing to install "libgdbm5")
 
 set -e
